@@ -1,4 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 
-sessionclustering.iml
+*.iml
 .idea
+
+mvnw
+mvnw.cmd
+.mvn

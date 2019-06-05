@@ -7,6 +7,12 @@
     <groupId>com.glqdlt.ex</groupId>
     <artifactId>session-clustering</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>was-1</module>
+        <module>was-2</module>
+    </modules>
 
 
 </project>
