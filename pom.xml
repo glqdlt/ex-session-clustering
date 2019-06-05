@@ -52,12 +52,14 @@
 
 
 
+
     </dependencies>
 
     <modules>
         <module>was-1</module>
         <module>was-2</module>
         <module>sessionmanager</module>
+        <module>oauth2client</module>
     </modules>
 
 
