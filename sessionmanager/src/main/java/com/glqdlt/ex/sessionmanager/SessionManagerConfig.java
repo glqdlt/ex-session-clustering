@@ -14,7 +14,8 @@ import javax.sql.DataSource;
 
 /**
  * @see <a href='https://www.baeldung.com/spring-session-jdbc'>https://www.baeldung.com/spring-session-jdbc</a>
- * org.springframework.session.jdbc.schema-mysql.sql
+ * @see <a href='https://jojoldu.tistory.com/171'>https://jojoldu.tistory.com/171</a>
+ * schema script ==> org.springframework.session.jdbc.schema-mysql.sql
  */
 @Configuration
 @EnableJdbcHttpSession
