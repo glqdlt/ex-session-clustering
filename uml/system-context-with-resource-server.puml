@@ -1,0 +1,32 @@
+@startuml
+
+package "SSO" {
+    JWT - [Auth_Server]
+}
+
+
+package "Legacy Server1" {
+    [View-Resolver(Template)] -- [Controller]
+    [Spring_Session_Context] -- [Controller]
+    [Spring_Session_Context] --- JWT
+}
+
+package "Legacy Server1 Api Server" {
+    [RestController(Resource)]
+}
+
+    [Controller] -- [RestController(Resource)] : JWT 토큰 교환
+
+package "Session Clustering Store"{
+
+    [Session Store(Mysql)]
+
+}
+
+[Spring_Session_Context] --> [Session Store(Mysql)]
+
+package "Legacy Server2" {
+    [Other_Spring_Session_Context] --> [Session Store(Mysql)]
+}
+
+@enduml
